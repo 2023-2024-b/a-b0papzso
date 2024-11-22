@@ -27,6 +27,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseCors("KreataCors");
+app.ConfigureWebApp();
 
 app.Run();
