@@ -1,4 +1,4 @@
-using Kreata.Extensions;
+using PointToPoint.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,4 +30,3 @@ app.MapControllers();
 app.ConfigureWebApp();
 
 app.Run();
-Console.WriteLine();

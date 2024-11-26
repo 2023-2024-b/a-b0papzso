@@ -1,9 +1,9 @@
-﻿using Kreata.Context;
+﻿using PointToPoint.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Kreata.Extensions
+namespace PointToPoint.Extensions
 {
-    public static class KretaBackendExtension
+    public static class PointToPointBackendExtension
     {
         public static void AddBackend(this IServiceCollection services)
         {
@@ -28,7 +28,7 @@ namespace Kreata.Extensions
         public static void ConfigureInMemoryContext(this IServiceCollection services)
         {
             string dbNameInMemoryContext = "Kreta" + Guid.NewGuid();
-            services.AddDbContext<KreataInMemoryContext>
+            services.AddDbContext<PointToPointInMemoryContext>
             (
                  options => options.UseInMemoryDatabase(databaseName: dbNameInMemoryContext),
                  ServiceLifetime.Scoped,

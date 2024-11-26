@@ -1,4 +1,4 @@
-namespace Kreata
+namespace PointToPoint
 {
     public class WeatherForecast
     {

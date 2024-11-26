@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Kreata.Context
+namespace PointToPoint.Context
 {
     public static class ModelBuilderExtension
     {

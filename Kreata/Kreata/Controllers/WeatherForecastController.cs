@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Kreata.Controllers
+namespace PointToPoint.Controllers
 {
     [ApiController]
     [Route("[controller]")]

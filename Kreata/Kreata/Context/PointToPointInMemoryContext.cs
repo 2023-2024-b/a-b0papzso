@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Kreata.Context
+namespace PointToPoint.Context
 {
-    public class KreataInMemoryContext : KreataContext
+    public class PointToPointInMemoryContext : PointToPointContext
     {
-        public KreataInMemoryContext(DbContextOptions options) : base(options)
+        public PointToPointInMemoryContext(DbContextOptions options) : base(options)
         {
         }
 

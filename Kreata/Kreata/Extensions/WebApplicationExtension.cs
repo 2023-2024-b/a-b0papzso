@@ -1,6 +1,6 @@
-﻿using Kreata.Context;
+﻿using PointToPoint.Context;
 
-namespace Kreata.Extensions
+namespace PointToPoint.Extensions
 {
     public static class WebApplicationExtension
     {
@@ -12,14 +12,14 @@ namespace Kreata.Extensions
 
         private static void ConfigureWebAppCors(this WebApplication app)
         {
-            app.UseCors("KreataCors");
+            app.UseCors("PointToPointCors");
         }
 
         private static void ConfigureInMemoryTestData(this WebApplication app)
         {
             using (var scope = app.Services.CreateAsyncScope())
             {
-                var dbContext = scope.ServiceProvider.GetRequiredService<KreataInMemoryContext>();
+                var dbContext = scope.ServiceProvider.GetRequiredService<PointToPointInMemoryContext>();
                 // InMemory test data
                 dbContext.Database.EnsureCreated();
             }
