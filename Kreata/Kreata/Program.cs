@@ -30,3 +30,4 @@ app.MapControllers();
 app.ConfigureWebApp();
 
 app.Run();
+Console.WriteLine();
